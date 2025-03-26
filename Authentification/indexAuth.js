@@ -1,5 +1,5 @@
 import fetchLoginFront from './login.js';
-import fetchLoginFront from './register.js';
+import fetchRegisterFront from './register.js';
 
 export default function indexAuth() {
     let defaultAction = "login";
@@ -13,7 +13,7 @@ export default function indexAuth() {
         } else {
             defaultAction = "login";
             btnChangeFront.innerHTML = "Register";
-            fetchLoginFront();
+            fetchRegisterFront();
         }
     }
 
